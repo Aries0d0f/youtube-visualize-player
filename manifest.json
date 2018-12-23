@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "Youtube Visualize Player",
-  "version": "1.0.1",
+  "version": "1.0.2",
 
   "description": "A firefox plugin for youtube that make visualize spectrum during playing",
 
