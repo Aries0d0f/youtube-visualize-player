@@ -64,7 +64,7 @@ const draw = () => {
         ctx,
         ((canvas.width * dpr) / analyser.fftSize) * (index + 3),
         canvas.height * 0.9,
-        ((canvas.width * dpr) / analyser.fftSize) * 2.5,
+        ((canvas.width * dpr) / analyser.fftSize) * 2,
         -Math.pow(Math.abs(ele - 128), 1.5) * 0.1
       );
     }
@@ -73,7 +73,12 @@ const draw = () => {
 
 const drawVolume = (ctx, startX, startY, width, height) => {
   ctx.fillStyle = "white";
-  ctx.fillRect(startX, startY, width, height);
+  ctx.rect(startX, startY, width, height);
+  ctx.shadowColor = "rgba(255, 255, 255, 0.1)";
+  ctx.shadowBlur = 1;
+  ctx.shadowOffsetX = 0;
+  ctx.shadowOffsetY = 0;
+  ctx.fill();
 };
 
 draw();
