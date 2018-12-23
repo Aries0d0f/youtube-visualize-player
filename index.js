@@ -33,7 +33,7 @@ youtubeSound.connect(analyser);
 analyser.connect(audioCtx.destination);
 gainNode.connect(audioCtx.destination);
 
-const dpr = window.devicePixelRatio || 1;
+const dpr = 2;
 
 const canvas = document.createElement("canvas");
 youtubeSource.parentElement.appendChild(canvas);
